@@ -163,6 +163,51 @@
     menuBtn.addEventListener('click', toggleMenu);
     mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
 </script>
+<section id="faq" class="py-24 bg-slate-50 border-y border-slate-100">
+    <div class="max-w-4xl mx-auto px-8">
+        <div class="text-center mb-16">
+            <p class="text-[#14B8A6] font-bold uppercase tracking-[0.3em] text-[10px] mb-4">Deep Dive</p>
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter">Consulting FAQs</h2>
+        </div>
 
+        <div class="space-y-4">
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                <button class="faq-btn w-full flex justify-between items-center p-6 text-left group" onclick="toggleFaq(this)">
+                    <span class="font-black text-slate-900 uppercase tracking-tight">What do SEO Consultants actually do?</span>
+                    <span class="text-[#14B8A6] text-2xl group-hover:rotate-45 transition-transform">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="p-6 pt-0 text-slate-500 text-sm leading-relaxed border-t border-slate-50">
+                        SEO consultants are responsible for keeping up to date with Google's algorithm to implement strategies that improve organic visibility. My role involves technical SEO, keyword research to understand audience searches, and high-authority link building to improve domain authority.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                <button class="faq-btn w-full flex justify-between items-center p-6 text-left group" onclick="toggleFaq(this)">
+                    <span class="font-black text-slate-900 uppercase tracking-tight">How to hire a Freelance SEO Consultant?</span>
+                    <span class="text-[#14B8A6] text-2xl group-hover:rotate-45 transition-transform">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="p-6 pt-0 text-slate-500 text-sm leading-relaxed border-t border-slate-50">
+                        The process is straightforward: once you decide SEO is the right channel, get in touch to arrange an initial chat. Once I understand your goals, I'll put together a proposal detailing the work required to achieve them.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                <button class="faq-btn w-full flex justify-between items-center p-6 text-left group" onclick="toggleFaq(this)">
+                    <span class="font-black text-slate-900 uppercase tracking-tight">How quickly should I expect results?</span>
+                    <span class="text-[#14B8A6] text-2xl group-hover:rotate-45 transition-transform">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="p-6 pt-0 text-slate-500 text-sm leading-relaxed border-t border-slate-50">
+                        The speed of results depends on factors like industry competitiveness and the current state of your website. While some keywords can see quick improvements, SEO is a long-term commitment that yields the best ROI over sustained, ongoing effort.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>

@@ -10,9 +10,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; scroll-behavior: smooth; }
         .hero-gradient { background: radial-gradient(circle at top right, rgba(20, 184, 166, 0.05), transparent); }
-        
-        /* Dropdown Desktop Logic */
-        .group:hover .dropdown-menu { display: block; }
     </style>
 </head>
 <body class="text-slate-900 hero-gradient">
@@ -32,24 +29,10 @@
 
     <div class="hidden md:flex items-center gap-8 text-[11px] font-bold uppercase tracking-widest text-slate-600">
         <a href="index.html" class="hover:text-[#14B8A6] transition-colors">Home</a>
-        
-        <div class="relative group">
-            <button class="flex items-center gap-1 hover:text-[#14B8A6] transition-colors uppercase">
-                Services
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            </button>
-            <div class="dropdown-menu hidden absolute left-0 mt-2 w-56 bg-white border border-slate-100 shadow-xl rounded-xl p-2 z-[100]">
-                <a href="digital-pr.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">Digital PR</a>
-                <a href="link-building.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">Link Building</a>
-                <a href="on-page.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">On-Page Optimisation</a>
-                <a href="local-seo.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">Local SEO</a>
-                <a href="aeo.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">AEO / AI Search</a>
-            </div>
-        </div>
-
+        <a href="#services" class="hover:text-[#14B8A6] transition-colors">Services</a>
         <a href="audit.html" class="hover:text-[#14B8A6] transition-colors">AI Search Audit</a>
         <a href="#contact" class="hover:text-[#14B8A6] transition-colors">Contact</a>
-        <a href="https://www.linkedin.com/in/YOUR-PROFILE/" target="_blank" class="text-slate-400 hover:text-[#0077B5] transition-colors">
+        <a href="https://www.linkedin.com/in/daniel-h-6ba46b2/" target="_blank" class="text-slate-400 hover:text-[#0077B5] transition-colors">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         </a>
     </div>
@@ -60,20 +43,186 @@
         </svg>
     </button>
 
-    <div id="mobile-menu" class="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-6 text-xl font-bold uppercase tracking-widest text-slate-600 translate-x-full transition-transform duration-300 md:hidden">
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 text-xl font-bold uppercase tracking-widest text-slate-600 translate-x-full transition-transform duration-300 md:hidden">
         <a href="index.html" class="mobile-link">Home</a>
-        <div class="flex flex-col items-center gap-4 border-y border-slate-100 py-6 w-full">
-            <p class="text-[10px] text-slate-400">Services</p>
-            <a href="digital-pr.html" class="mobile-link text-lg">Digital PR</a>
-            <a href="link-building.html" class="mobile-link text-lg">Link Building</a>
-            <a href="on-page.html" class="mobile-link text-lg">On-Page</a>
-            <a href="local-seo.html" class="mobile-link text-lg">Local SEO</a>
-            <a href="aeo.html" class="mobile-link text-lg">AEO / AI Search</a>
-        </div>
+        <a href="#services" class="mobile-link">Services</a>
         <a href="audit.html" class="mobile-link">AI Search Audit</a>
         <a href="#contact" class="mobile-link">Contact</a>
     </div>
 </nav>
+
+<section class="max-w-6xl mx-auto px-8 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+        <div class="inline-block border border-teal-100 bg-teal-50/30 px-3 py-1 rounded-full mb-6">
+            <p class="text-[10px] font-bold uppercase tracking-widest text-[#14B8A6]">16+ Years iGaming Expertise</p>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 tracking-tight leading-[1.05] mb-8 uppercase">
+            16 Years of <span class="text-[#14B8A6]">iGaming Dominance</span>, <br class="hidden md:block">Now Your Edge.
+        </h1>
+        <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-lg">
+            I help ambitious brands scale through Digital PR, high-authority Link Building, and AI Search Optimization.
+        </p>
+        <div class="flex flex-wrap gap-4">
+            <a href="#contact" class="bg-slate-900 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-slate-800 transition shadow-lg">Contact Me</a>
+            <a href="https://wa.me/35056020088" class="bg-[#22C55E] text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-[10px] flex items-center gap-2">WhatsApp</a>
+        </div>
+    </div>
+    <div class="relative">
+        <img src="IMG_0895.jpeg" alt="Hawk Marketing Founder" class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-700 w-full">
+    </div>
+</section>
+
+<section id="services" class="py-24 bg-slate-50 border-y border-slate-100">
+    <div class="max-w-6xl mx-auto px-8">
+        <div class="mb-16 text-center">
+            <p class="text-[#14B8A6] font-bold uppercase tracking-[0.3em] text-[10px] mb-4">Core Expertise</p>
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter">Strategic Acquisition</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-10 rounded-3xl border border-slate-200 shadow-sm">
+                <h3 class="text-xl font-black text-slate-900 mb-4 uppercase">Digital PR</h3>
+                <p class="text-slate-500 text-sm">Securing placements on top-tier global publications to build brand equity.</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl border border-slate-200 shadow-sm">
+                <h3 class="text-xl font-black text-slate-900 mb-4 uppercase">Link Building</h3>
+                <p class="text-slate-500 text-sm">High-authority strategies honed in the competitive trenches of iGaming.</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl border border-slate-200 shadow-sm">
+                <h3 class="text-xl font-black text-slate-900 mb-4 uppercase">AI Search & AEO</h3>
+                <p class="text-slate-500 text-sm">Optimizing for Generative Engine Optimization (GEO) and AI-driven answer engines.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why-specialist" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-8">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/2 relative">
+                <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden shadow-2xl relative z-10">
+                    <img src="career-photo.jpg" alt="Specialist" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-8">
+                    Why a <span class="text-[#14B8A6]">Specialist</span> <br> over an Agency?
+                </h2>
+                <div class="space-y-6 text-slate-600 text-sm leading-relaxed">
+                    <p>Agencies often pass work to junior staff. I provide direct, senior-level execution with no middlemen and zero AI-generated fluff.</p>
+                    <ul class="space-y-4 border-t border-slate-100 pt-6">
+                        <li class="flex gap-4"><strong>/</strong> No Junior Pass-offs: Work with me directly.</li>
+                        <li class="flex gap-4"><strong>/</strong> Human-First: Every PR article is manually crafted.</li>
+                        <li class="flex gap-4"><strong>/</strong> Manual Precision: I hand-vet every domain for equity.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-24 bg-slate-900 text-white">
+    <div class="max-w-3xl mx-auto px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-black uppercase tracking-tighter mb-4">Ready to Scale?</h2>
+            <p class="text-slate-400 text-xs font-bold uppercase tracking-widest">Get in touch to discuss your strategy</p>
+        </div>
+        <form action="#" class="grid gap-6">
+            <div class="grid md:grid-cols-2 gap-6">
+                <input type="text" placeholder="NAME" class="bg-slate-800 border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-[#14B8A6] transition">
+                <input type="text" placeholder="COMPANY" class="bg-slate-800 border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-[#14B8A6] transition">
+            </div>
+            <input type="email" placeholder="EMAIL" class="bg-slate-800 border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-[#14B8A6] transition">
+            <textarea placeholder="MESSAGE" rows="4" class="bg-slate-800 border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-[#14B8A6] transition"></textarea>
+            <button class="bg-[#14B8A6] text-white font-black uppercase py-5 rounded-xl hover:bg-white hover:text-slate-900 transition">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<section id="faq" class="py-24 bg-slate-50 border-y border-slate-100">
+    <div class="max-w-4xl mx-auto px-8">
+        <div class="text-center mb-16">
+            <p class="text-[#14B8A6] font-bold uppercase tracking-[0.3em] text-[10px] mb-4">Deep Dive</p>
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter">Consulting FAQs</h2>
+        </div>
+
+        <div class="space-y-4">
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                <button class="faq-btn w-full flex justify-between items-center p-6 text-left group" onclick="toggleFaq(this)">
+                    <span class="font-black text-slate-900 uppercase tracking-tight">What do SEO Consultants actually do?</span>
+                    <span class="text-[#14B8A6] text-2xl group-hover:rotate-45 transition-transform">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="p-6 pt-0 text-slate-500 text-sm leading-relaxed border-t border-slate-50">
+                        SEO consultants are responsible for keeping up to date with Google's algorithm to implement strategies that improve organic visibility. My role involves technical SEO, keyword research, and high-authority link building.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                <button class="faq-btn w-full flex justify-between items-center p-6 text-left group" onclick="toggleFaq(this)">
+                    <span class="font-black text-slate-900 uppercase tracking-tight">How to hire a Freelance SEO Consultant?</span>
+                    <span class="text-[#14B8A6] text-2xl group-hover:rotate-45 transition-transform">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="p-6 pt-0 text-slate-500 text-sm leading-relaxed border-t border-slate-50">
+                        The process is straightforward: once you decide SEO is the right channel, get in touch to arrange an initial chat. Once I understand your goals, I'll put together a proposal detailing the work required to achieve them.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                <button class="faq-btn w-full flex justify-between items-center p-6 text-left group" onclick="toggleFaq(this)">
+                    <span class="font-black text-slate-900 uppercase tracking-tight">How quickly should I expect results?</span>
+                    <span class="text-[#14B8A6] text-2xl group-hover:rotate-45 transition-transform">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="p-6 pt-0 text-slate-500 text-sm leading-relaxed border-t border-slate-50">
+                        The speed of results depends on factors like industry competitiveness and website health. While some keywords can see quick improvements, SEO is a long-term commitment that yields the best ROI over sustained effort.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="py-12 bg-slate-950 text-center border-t border-slate-800">
+    <p class="text-slate-500 text-[10px] font-bold uppercase tracking-widest">© 2026 Hawk Marketing. Gibraltar.</p>
+</footer>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+        const isOpen = mobileMenu.classList.contains('translate-x-0');
+        if (isOpen) {
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenu.classList.remove('translate-x-0');
+            menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>';
+        } else {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+            menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+        }
+    }
+    menuBtn.addEventListener('click', toggleMenu);
+    mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+    function toggleFaq(button) {
+        const content = button.nextElementSibling;
+        const allContents = document.querySelectorAll('.faq-content');
+        allContents.forEach(item => {
+            if (item !== content) item.style.maxHeight = null;
+        });
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    }
+</script>
 
 </body>
 </html>

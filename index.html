@@ -13,59 +13,60 @@
         
         /* Dropdown Desktop Logic */
         .group:hover .dropdown-menu { display: block; }
+
+        /* Mobile Menu Animation State */
+        #mobile-menu.active { transform: translateX(0); }
     </style>
+
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
     {
-      "@type": "ProfessionalService",
-      "name": "Hawk Marketing",
-      "image": "https://hawkmarketing.io/logo.png",
-      "@id": "https://hawkmarketing.io",
-      "url": "https://hawkmarketing.io",
-      "telephone": "+35056020088",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Gibraltar",
-        "addressCountry": "GI"
-      },
-      "serviceArea": "Worldwide",
-      "description": "Expert iGaming SEO, Digital PR, and AI Search Optimization Consultant with 16+ years experience."
-    },
-    {
-      "@type": "Person",
-      "name": "Your Name",
-      "jobTitle": "Founder & SEO Consultant",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Hawk Marketing"
-      },
-      "description": "Qualified Barrister and Solicitor with 16+ years of experience in iGaming SEO and Growth Marketing.",
-      "knowsAbout": ["SEO", "Digital PR", "Link Building", "AI Search Optimization", "Internet Law"]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What do SEO Consultants actually do?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "SEO consultants manage organic visibility by staying current with algorithms, focusing on technical SEO, keyword research, and high-authority link building."
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "name": "Hawk Marketing",
+          "image": "https://hawkmarketing.io/logo.png",
+          "@id": "https://hawkmarketing.io",
+          "url": "https://hawkmarketing.io",
+          "telephone": "+35056020088",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Gibraltar",
+            "addressCountry": "GI"
+          },
+          "serviceArea": "Worldwide",
+          "description": "Expert iGaming SEO, Digital PR, and AI Search Optimization Consultant."
+        },
+        {
+          "@type": "Person",
+          "name": "Your Name",
+          "jobTitle": "Founder & SEO Consultant",
+          "affiliation": { "@type": "Organization", "name": "Hawk Marketing" },
+          "description": "Qualified Barrister and Solicitor with 16+ years in iGaming SEO.",
+          "knowsAbout": ["SEO", "Digital PR", "Link Building", "AI Search Optimization"]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "What do SEO Consultants actually do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SEO consultants manage organic visibility by staying current with algorithms, focusing on technical SEO, keyword research, and high-authority link building."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to hire a Freelance SEO Consultant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The process involves an initial consultation to understand your goals, followed by a bespoke proposal."
+            }
+          }]
         }
-      },
-      {
-        "@type": "Question",
-        "name": "How to hire a Freelance SEO Consultant?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The process involves an initial consultation to understand your goals, followed by a bespoke proposal detailing the strategic work required."
-        }
-      }]
+      ]
     }
-  ]
-}
-</script>
+    </script>
 </head>
 <body class="text-slate-900 hero-gradient">
 
@@ -84,7 +85,6 @@
 
     <div class="hidden md:flex items-center gap-8 text-[11px] font-bold uppercase tracking-widest text-slate-600">
         <a href="index.html" class="hover:text-[#14B8A6] transition-colors">Home</a>
-        
         <div class="relative group">
             <button class="flex items-center gap-1 hover:text-[#14B8A6] transition-colors uppercase py-2">
                 Services
@@ -98,7 +98,6 @@
                 <a href="aeo.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">AEO / AI Search</a>
             </div>
         </div>
-
         <a href="audit.html" class="hover:text-[#14B8A6] transition-colors">AI Search Audit</a>
         <a href="#contact" class="hover:text-[#14B8A6] transition-colors">Contact</a>
         <a href="https://www.linkedin.com/in/YOUR-PROFILE/" target="_blank" class="text-slate-400 hover:text-[#0077B5] transition-colors">
@@ -126,6 +125,7 @@
         <a href="#contact" class="mobile-link">Contact</a>
     </div>
 </nav>
+
 <section class="max-w-6xl mx-auto px-8 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
     <div>
         <div class="inline-block border border-teal-100 bg-teal-50/30 px-3 py-1 rounded-full mb-6">
@@ -146,6 +146,7 @@
         <img src="IMG_0895.jpeg" alt="Hawk Marketing Founder" class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition duration-700 w-full">
     </div>
 </section>
+
 <section id="services" class="py-24 bg-slate-50 border-y border-slate-100">
     <div class="max-w-6xl mx-auto px-8">
         <div class="mb-16 text-center">
@@ -174,6 +175,73 @@
         </div>
     </div>
 </section>
+
+<section id="why-specialist" class="py-24 bg-white border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/2 relative">
+                <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden shadow-2xl relative z-10">
+                    <img src="career-photo.jpg" alt="SEO Specialist Personal Execution" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-8">
+                    Why choose an <span class="text-[#14B8A6]">SEO Specialist</span> over an Agency?
+                </h2>
+                <div class="space-y-6 text-slate-600 leading-relaxed">
+                    <p>After 7 years in agency leadership and 13 years scaling iGaming giants, I provide agency-level results at a freelancer's agility.</p>
+                    <ul class="space-y-4 pt-4">
+                        <li class="flex gap-4">
+                            <span class="text-[#14B8A6] font-black">/</span>
+                            <p><strong>No Junior Pass-offs:</strong> You work with a 16+ year expert, not a junior account manager.</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-[#14B8A6] font-black">/</span>
+                            <p><strong>Human Content:</strong> No middlemen, no AI fluff. High-authority placements manually crafted.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-10">
+                    <a href="#contact" class="inline-block bg-slate-900 text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest text-[10px]">Secure a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-24 bg-slate-50 border-y border-slate-100">
+    <div class="max-w-4xl mx-auto px-8">
+        <div class="text-center mb-16">
+            <p class="text-[#14B8A6] font-bold uppercase tracking-[0.3em] text-[10px] mb-4">Deep Dive</p>
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter">Consulting FAQs</h2>
+        </div>
+        <div class="space-y-4">
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                <button class="faq-btn w-full flex justify-between items-center p-6 text-left" onclick="toggleFaq(this)">
+                    <span class="font-black text-slate-900 uppercase tracking-tight">What do SEO Consultants actually do?</span>
+                    <span class="faq-icon text-[#14B8A6] text-2xl transition-transform duration-300">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="p-6 pt-0 text-slate-500 text-sm leading-relaxed border-t border-slate-50">
+                        SEO consultants manage organic visibility by staying current with algorithms, focusing on technical SEO, and high-authority link building.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+                <button class="faq-btn w-full flex justify-between items-center p-6 text-left" onclick="toggleFaq(this)">
+                    <span class="font-black text-slate-900 uppercase tracking-tight">How to hire a Freelance SEO Consultant?</span>
+                    <span class="faq-icon text-[#14B8A6] text-2xl transition-transform duration-300">+</span>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="p-6 pt-0 text-slate-500 text-sm leading-relaxed border-t border-slate-50">
+                        The process starts with a consultation to understand your goals, followed by a bespoke proposal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="contact" class="py-24 bg-slate-900 text-white">
     <div class="max-w-3xl mx-auto px-8">
         <div class="text-center mb-12">
@@ -183,92 +251,56 @@
         <form action="#" class="grid gap-6">
             <div class="grid md:grid-cols-2 gap-6">
                 <input type="text" placeholder="NAME" class="bg-slate-800 border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-[#14B8A6]">
-                <input type="text" placeholder="EMAIL" class="bg-slate-800 border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-[#14B8A6]">
+                <input type="email" placeholder="EMAIL" class="bg-slate-800 border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-[#14B8A6]">
             </div>
-            <input type="text" placeholder="COMPANY" class="bg-slate-800 border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-[#14B8A6]">
             <textarea placeholder="MESSAGE" rows="4" class="bg-slate-800 border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-[#14B8A6]"></textarea>
             <button class="bg-[#14B8A6] text-white font-black uppercase py-5 rounded-xl hover:bg-white hover:text-slate-900 transition">Send Message</button>
         </form>
     </div>
 </section>
-<section id="why-specialist" class="py-24 bg-white border-y border-slate-100">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col lg:flex-row items-center gap-16 md:gap-24">
-            
-            <div class="w-full lg:w-1/2 relative">
-                <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden shadow-2xl relative z-10">
-                    <img src="career-photo.jpg" alt="SEO Specialist Personal Execution" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
-                </div>
-                <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-[#14B8A6] rounded-full blur-[100px] opacity-20 -z-10"></div>
-            </div>
 
-            <div class="w-full lg:w-1/2">
-                <h2 class="text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-8">
-                    Why choose an <span class="text-[#14B8A6]">SEO Specialist</span> <br class="hidden md:block"> over an Agency?
-                </h2>
-                
-                <div class="space-y-6 text-slate-600 leading-relaxed text-base">
-                    <p>Deciding between an agency and a freelancer comes down to budget and the specific high-level skills you require. After 7 years in agency leadership and 13 years scaling iGaming giants, I provide agency-level results at a freelancer's agility.</p>
-                    
-                    <ul class="space-y-4 pt-4">
-                        <li class="flex gap-4">
-                            <span class="text-[#14B8A6] font-black">/</span>
-                            <p><strong>No Junior Pass-offs:</strong> When you work with me, a senior expert with 16+ years of experience handles your site—not a junior account manager.</p>
-                        </li>
-                        <li class="flex gap-4">
-                            <span class="text-[#14B8A6] font-black">/</span>
-                            <p><strong>Human Content, Not AI:</strong> Every outreach and PR article is manually crafted to pass link equity and survive algorithm shifts. No middlemen, no AI fluff.</p>
-                        </li>
-                        <li class="flex gap-4">
-                            <span class="text-[#14B8A6] font-black">/</span>
-                            <p><strong>Competitive Overheads:</strong> Without the agency office fees, your entire budget goes directly into high-authority link acquisition and PR placements.</p>
-                        </li>
-                        <li class="flex gap-4">
-                            <span class="text-[#14B8A6] font-black">/</span>
-                            <p><strong>Manual Precision:</strong> I manually filter for high-authority domains, ensuring natural high-authority cross-links and actual value for your users.</p>
-                        </li>
-                    </ul>
-                </div>
+<footer class="py-12 bg-white text-center border-t border-slate-100">
+    <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">© 2026 Hawk Marketing. Gibraltar.</p>
+</footer>
 
-                <div class="mt-10">
-                    <a href="#contact" class="inline-block bg-slate-900 text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-[#14B8A6] transition-all shadow-xl">Secure a Consultation</a>
-                </div>
-            </div>
+<script>
+    // 1. MOBILE MENU LOGIC
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
 
-        </div>
-    </div>
-</section>
-<section id="faq" class="py-24 bg-slate-50 border-y border-slate-100">
-    <div class="max-w-4xl mx-auto px-8">
-        <div class="text-center mb-16">
-            <p class="text-[#14B8A6] font-bold uppercase tracking-[0.3em] text-[10px] mb-4">Deep Dive</p>
-            <h2 class="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter">Consulting FAQs</h2>
-        </div>
+    document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    });
 
-        <div class="space-y-4">
-            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
-                <button class="faq-btn w-full flex justify-between items-center p-6 text-left group" onclick="toggleFaq(this)">
-                    <span class="font-black text-slate-900 uppercase tracking-tight">What do SEO Consultants actually do?</span>
-                    <span class="faq-icon text-[#14B8A6] text-2xl transition-transform duration-300">+</span>
-                </button>
-                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                    <p class="p-6 pt-0 text-slate-500 text-sm leading-relaxed border-t border-slate-50">
-                        SEO consultants are responsible for keeping up to date with Google's algorithm to implement strategies that improve organic visibility. My role involves technical SEO, keyword research, and high-authority link building.
-                    </p>
-                </div>
-            </div>
+    // 2. FAQ ACCORDION LOGIC
+    function toggleFaq(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.faq-icon');
+        
+        // Close other FAQs
+        document.querySelectorAll('.faq-content').forEach(item => {
+            if (item !== content) {
+                item.style.maxHeight = null;
+                item.previousElementSibling.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+            }
+        });
 
-            <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
-                <button class="faq-btn w-full flex justify-between items-center p-6 text-left group" onclick="toggleFaq(this)">
-                    <span class="font-black text-slate-900 uppercase tracking-tight">How to hire a Freelance SEO Consultant?</span>
-                    <span class="faq-icon text-[#14B8A6] text-2xl transition-transform duration-300">+</span>
-                </button>
-                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                    <p class="p-6 pt-0 text-slate-500 text-sm leading-relaxed border-t border-slate-50">
-                        The process is straightforward: once you decide SEO is the right channel, get in touch to arrange an initial chat. Once I understand your goals, I'll put together a proposal detailing the work required to achieve them.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        // Toggle current FAQ
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.style.transform = 'rotate(45deg)';
+        }
+    }
+</script>
+
+</body>
+</html>

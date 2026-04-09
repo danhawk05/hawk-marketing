@@ -71,33 +71,36 @@
 <body class="text-slate-900 hero-gradient">
 
 <nav class="flex justify-between items-center p-5 sm:p-8 max-w-6xl mx-auto relative">
-   <a href="index.html" class="flex items-center group z-50">
-    <svg width="280" height="90" viewBox="0 0 280 90" xmlns="http://www.w3.org/2000/svg">
+  <a href="index.html" class="flex items-center group z-50">
+    <svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
         
         <defs>
-            <filter id="premiumVectorShadow" x="-5%" y="-5%" width="110%" height="110%">
-                <feDropShadow dx="1.2" dy="1.8" stdDeviation="0.9" flood-color="#000" flood-opacity="0.12"/>
+            <filter id="premiumShadow" x="-10%" y="-10%" width="120%" height="120%">
+                <feDropShadow dx="1.5" dy="2" stdDeviation="1" flood-color="#000" flood-opacity="0.15"/>
             </filter>
         </defs>
 
-        <g id="hawk-icon-group" transform="translate(10, 5)" filter="url(#premiumVectorShadow)">
-            <path d="M50 5 L75 20 C 80 23, 82 28, 83 33 L 78 40 L 50 45 L 60 25 Z" fill="#0f172a"/>
-            <path d="M40 30 L60 45 L50 60 Z" fill="#14B8A6" fill-opacity="0.8"/>
-            <path d="M30 55 L50 70 L40 85 Z" fill="#14B8A6" fill-opacity="0.5"/>
+        <g id="hawk-icon-stack" filter="url(#premiumShadow)">
+            <path d="M45 15 L75 15 C 82 15, 88 18, 90 22 C 92 26, 90 28, 85 28 L 65 28 L 45 45 Z" fill="#0f172a"/>
+            
+            <path d="M30 40 L55 55 L35 70 Z" fill="#14B8A6" fill-opacity="0.8"/>
+            
+            <path d="M15 65 L40 80 L20 95 Z" fill="#14B8A6" fill-opacity="0.5"/>
         </g>
 
-        <text x="90" y="32" font-family="Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="-1" fill="#0f172a" filter="url(#premiumVectorShadow)">HAWK</text>
-        <text x="90" y="50" font-family="Arial, sans-serif" font-weight="700" font-size="11" letter-spacing="4" fill="#14B8A6">MARKETING</text>
+        <g transform="translate(100, 35)" filter="url(#premiumShadow)">
+            <text x="0" y="0" font-family="Arial, sans-serif" font-weight="900" font-size="32" letter-spacing="-1" fill="#0f172a">HAWK</text>
+            <text x="0" y="22" font-family="Arial, sans-serif" font-weight="700" font-size="12" letter-spacing="4" fill="#14B8A6">MARKETING</text>
+        </g>
 
-        <g id="services-box-group" filter="url(#premiumVectorShadow)">
-            <rect x="10" y="62" width="260" height="2" fill="#14B8A6"/>
-            <rect x="10" y="66" width="260" height="18" fill="none" stroke="#e2e8f0" stroke-width="1.2"/>
-            <text x="140" y="79" font-family="Arial, sans-serif" font-weight="800" font-size="8.5" text-anchor="middle" fill="#0f172a">
+        <g id="services-section" transform="translate(10, 75)">
+            <rect x="0" y="0" width="280" height="2" fill="#14B8A6"/>
+            <rect x="0" y="4" width="280" height="18" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+            <text x="140" y="17" font-family="Arial, sans-serif" font-weight="800" font-size="9" text-anchor="middle" fill="#0f172a">
                 LINK BUILDING <tspan fill="#14B8A6">|</tspan> DIGITAL PR <tspan fill="#14B8A6">|</tspan> AEO/AI
             </text>
         </g>
     </svg>
-</a>
 </a>
 
     <div class="hidden md:flex items-center gap-8 text-[11px] font-bold uppercase tracking-widest text-slate-600">

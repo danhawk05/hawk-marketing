@@ -71,18 +71,24 @@
 <body class="text-slate-900 hero-gradient">
 
 <nav class="flex justify-between items-center p-5 sm:p-8 max-w-6xl mx-auto relative">
-    <a href="index.html" class="flex items-center gap-4 group z-50">
-        <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none">
-            <path d="M22 2L10 6L14 10L22 2Z" class="fill-slate-900 transition-all duration-300"/>
-            <path d="M18 7L6 12L11 16L18 7Z" class="fill-[#14B8A6] opacity-80 group-hover:opacity-100 transition-all duration-300"/>
-            <path d="M14 13L2 21L9 22L14 13Z" class="fill-[#14B8A6] opacity-60 group-hover:opacity-100 transition-all duration-300"/>
+    <a href="index.html" class="flex items-center group z-50">
+        <svg width="220" height="70" viewBox="0 0 280 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="softDepth" x="-10%" y="-10%" width="120%" height="120%">
+                    <feDropShadow dx="1" dy="1.5" stdDeviation="1" flood-color="#000" flood-opacity="0.15"/>
+                </filter>
+            </defs>
+            <g transform="translate(10, 10)" filter="url(#softDepth)">
+                <path d="M12 0 H65 C72 0, 78 3, 80 8 C82 12, 80 15, 75 16 L60 16 L20 35 Z" fill="#0f172a"/>
+                <path d="M12 25 L55 40 L35 65 L5 50 Z" fill="#14B8A6" fill-opacity="0.8"/>
+                <path d="M0 55 L40 70 L25 95 L-10 80 Z" fill="#14B8A6" fill-opacity="0.5"/>
+            </g>
+            <g transform="translate(105, 45)" filter="url(#softDepth)">
+                <text x="0" y="0" font-family="Inter, sans-serif" font-weight="900" font-size="40" letter-spacing="-2" fill="#0f172a" style="text-transform: uppercase;">HAWK</text>
+                <text x="2" y="24" font-family="Inter, sans-serif" font-weight="700" font-size="14" letter-spacing="6" fill="#14B8A6" style="text-transform: uppercase;">MARKETING</text>
+            </g>
         </svg>
-        <div class="flex flex-col leading-none uppercase">
-            <span class="text-2xl font-black tracking-tighter text-slate-900">Hawk</span>
-            <span class="text-[10px] font-bold tracking-[0.3em] text-[#14B8A6] mt-1">Marketing</span>
-        </div>
     </a>
-
     <div class="hidden md:flex items-center gap-8 text-[11px] font-bold uppercase tracking-widest text-slate-600">
         <a href="index.html" class="hover:text-[#14B8A6] transition-colors">Home</a>
         

@@ -148,43 +148,56 @@
     </div>
 </section>
 
-<"why-specialist" class="py-24 bg-white border-y border-slate-100">
+<section id="why-specialist" class="py-24 bg-white border-y border-slate-100">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col lg:flex-row items-center gap-16">
-            <div class="w-full lg:w-1/2 relative">
-                <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden shadow-2xl relative z-10">
-                    <img src="AI-link-workflow.png" alt="AI Citation Link Building WorkFlow" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+        <!-- Main Grid: Stacks on mobile, side-by-side on desktop -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Left Side: Image Container -->
+            <div class="order-1 lg:order-1">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-[#14B8A6] to-cyan-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <div class="relative bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
+                        <!-- Added 'w-full' and removed restrictive height to keep it big on mobile -->
+                        <img src="AI-link-workflow.png" 
+                             alt="The AI-Authority Linking Workflow" 
+                             class="w-full h-auto object-contain p-2 md:p-4">
+                    </div>
                 </div>
+                <!-- Optional Mobile Caption -->
+                <p class="text-center text-slate-400 text-xs mt-4 lg:hidden italic">Tap or pinch to zoom into the workflow</p>
             </div>
-            <div class="w-full lg:w-1/2">
-                <h2 class="text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-8">
-                    Why choose an <span class="text-[#14B8A6]">SEO Specialist</span> over an Agency?
+
+            <!-- Right Side: Text Content -->
+            <div class="order-2 lg:order-2">
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter leading-tight mb-6">
+                    Why Choose an <span class="text-[#14B8A6]">SEO Specialist</span> Over an Agency?
                 </h2>
-                <div class="space-y-6 text-slate-600 leading-relaxed">
-                    <p>With 17 years experience in SEO and 13 years scaling an iGaming startup into an international brand, I provide better than agency results with a freelancer's agility for a better price by cutting out the middlemen.</p>
-                    <ul class="space-y-4 pt-4">
-                        <li class="flex gap-4">
-                            <span class="text-[#14B8A6] font-black">🦅</span>
-                            <p><strong>Best Price:</strong> Most SEO agencies outsource much of their work to smaller overseas agencies often leading to corners being cut and lower quality links less likely to pass value. I manually outreach and arrange the most authoratative links which are the most relevant to your industry for the best price.</p>
-                        </li>
-                        <li class="flex gap-4">
-                            <span class="text-[#14B8A6] font-black">🦅</span>
-                            <p><strong>AI-Cited Websites :</strong>I am not paying for links with outdated lists. I find the most relevant websites which are being cited by AI for prompts about you niche and manually secure placements improving both your AI recommendations and SEO rankings.</p>
-                        </li>
-                        <li class="flex gap-4">
-                            <span class="text-[#14B8A6] font-black">🦅</span>
-                            <p><strong>No Pass-offs:</strong> You work with a 16+ year expert, not a junior account manager. I do all the work myself and am not subcontracting or passing off to anyone else.</p>
-                        </li>
-                        <li class="flex gap-4">
-                            <span class="text-[#14B8A6] font-black">🦅</span>
-                            <p><strong>Human Content:</strong> You are not paying for middlemen or AI automated link building and content. I secure high-authority, relevant placements with articles which add information and pass value.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mt-10">
-                    <a href="#contact" class="inline-block bg-slate-900 text-white px-10 py-5 rounded-full font-bold uppercase tracking-widest text-[10px]">Secure a Consultation</a>
+                
+                <p class="text-slate-600 text-base md:text-lg mb-8 leading-relaxed">
+                    With 17 years experience in SEO and 13 years scaling an iGaming startup into an international brand, I provide better than agency results with a freelancer's agility.
+                </p>
+
+                <!-- Simplified List for Mobile Readability -->
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-slate-900 text-[#14B8A6] rounded-lg flex items-center justify-center font-bold">01</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 uppercase text-sm mb-1">AI-Cited Websites</h4>
+                            <p class="text-sm text-slate-500">Manual outreach to the exact sites currently cited by AI models in your niche.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-slate-900 text-[#14B8A6] rounded-lg flex items-center justify-center font-bold">02</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 uppercase text-sm mb-1">No Pass-Offs</h4>
+                            <p class="text-sm text-slate-500">You work with a 16+ year expert, not a junior account manager.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

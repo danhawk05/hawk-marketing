@@ -126,11 +126,12 @@
     <div class="p-8">
         <div class="flex justify-between items-center mb-12">
             <img src="hawklogo3.png" alt="Logo" class="h-12 w-auto">
-            <button id="close-menu" class="text-slate-900 p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
+            <button id="close-menu" class="text-slate-900 p-4 focus:outline-none" aria-label="Close Menu">
+    <div class="w-8 h-8 flex items-center justify-center relative">
+        <span class="block absolute h-0.5 w-8 bg-slate-900 rotate-45"></span>
+        <span class="block absolute h-0.5 w-8 bg-slate-900 -rotate-45"></span>
+    </div>
+</button>
         </div>
 
         <div class="flex flex-col gap-8 text-center">

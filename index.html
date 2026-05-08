@@ -398,19 +398,27 @@
 </footer>
 
 <script>
-    // 1. MOBILE MENU LOGIC
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('active');
-    });
+   // 1. MOBILE MENU LOGIC
+const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-menu'); // Added this line
+const mobileMenu = document.getElementById('mobile-menu');
 
-    document.querySelectorAll('.mobile-link').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-        });
+// Open: Add the 'active' class
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('active');
+});
+
+// Close: Remove the 'active' class (this makes the X work)
+closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+});
+
+// Close if a link is clicked
+document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
     });
+});
 
     // 2. FAQ ACCORDION LOGIC
     function toggleFaq(button) {

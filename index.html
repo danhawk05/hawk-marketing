@@ -118,27 +118,31 @@
         </svg>
     </button>
 </nav>
-    <div id="mobile-menu" class="fixed inset-0 bg-white z-[200] transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
-    <div class="p-8">
-        <div class="flex justify-between items-center mb-12">
-            <img src="hawklogo3.png" alt="Logo" class="h-12 w-auto">
-            <button id="close-menu" class="text-slate-900 p-4 focus:outline-none" aria-label="Close Menu">
-    <div class="w-8 h-8 flex items-center justify-center relative">
-        <span class="block absolute h-0.5 w-8 bg-slate-900 rotate-45"></span>
-        <span class="block absolute h-0.5 w-8 bg-slate-900 -rotate-45"></span>
-    </div>
-</button>
-        </div>
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-[200] flex flex-col items-center justify-center gap-8 text-center">
+    <button id="close-menu" class="absolute top-8 right-8 text-slate-900">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+    </button>
 
-        <div class="flex flex-col gap-8 text-center">
-            <a href="index.html" class="text-2xl font-bold uppercase tracking-tight text-slate-900">Home</a>
-            <a href="link-building.html" class="text-2xl font-bold uppercase tracking-tight text-slate-900">Link Building</a>
-            <a href="digital-pr.html" class="text-2xl font-bold uppercase tracking-tight text-slate-900">Digital PR</a>
-            <a href="on-page-optimization.html" class="text-2xl font-bold uppercase tracking-tight text-slate-900">On-Page SEO</a>
-            <a href="aeo.html" class="text-2xl font-bold uppercase tracking-tight text-slate-900">AEO / AI Search</a>
-            <a href="audit.html" class="text-2xl font-bold uppercase tracking-tight text-slate-900">AI Search Audit</a>
-            <a href="https://wa.me/35056020088" class="bg-slate-900 text-white py-5 rounded-2xl font-black uppercase tracking-widest text-sm mt-4">Consult Now</a>
-        </div>
+    <a href="index.html" class="text-2xl font-black uppercase tracking-tighter text-slate-900">Home</a>
+    
+    <div class="h-px w-12 bg-slate-100"></div>
+    
+    <a href="on-page-optimization.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">On-Page SEO</a>
+    <a href="link-building.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">Link Building</a>
+    <a href="digital-pr.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">Digital PR</a>
+    <a href="local-seo.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">Local SEO</a>
+    <a href="aeo.html" class="text-lg font-bold uppercase tracking-widest text-[#14B8A6]">AEO / AI Search</a>
+    
+    <div class="h-px w-12 bg-slate-100"></div>
+    
+    <a href="audit.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">AI Search Audit</a>
+    
+    <a href="https://wa.me/35056020088" class="bg-[#14B8A6] text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs mt-4">
+        WhatsApp Me
+    </a>
+</div>
     </div>
 </div>
 

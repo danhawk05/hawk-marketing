@@ -1,64 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="https://fav.farm/🦅">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Building Specialist | Hawk Marketing</title>
+    <title>Link Building for SEO &amp; AI Search | Hawk Marketing</title>
+    <meta name="description" content="Backlinks earned on the exact sites AI models cite as authorities in your niche — real topical authority for both SEO rankings and AI search, no link lists or PBNs.">
+
+    <link rel="icon" href="https://fav.farm/🦅">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
         .hero-gradient { background: radial-gradient(circle at top right, rgba(20, 184, 166, 0.05), transparent); }
+
         .group:hover .dropdown-menu { display: block; }
+
+        #mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        #mobile-menu.active { transform: translateX(0); }
     </style>
 </head>
 <body class="text-slate-900 hero-gradient">
+
 <nav class="flex justify-between items-center p-5 sm:p-8 max-w-6xl mx-auto relative z-[100]">
     <a href="index.html" class="flex items-center gap-4 group">
-        <img src="/hawklogo3.png" 
-     alt="Hawk Marketing Logo" 
-     class="h-16 md:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+        <img src="/hawklogo3.png"
+             alt="Hawk Marketing Logo"
+             class="h-16 md:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
     </a>
 
-   <div class="hidden md:flex items-center gap-8 text-[11px] font-bold uppercase tracking-tight text-slate-600">
-    <a href="index.html" class="hover:text-[#14B8A6] transition-colors">Home</a>
-    <div class="relative group">
-        <button class="flex items-center gap-1 hover:text-[#14B8A6] transition-colors uppercase py-2">
-            Services
-        </button>
-        <div class="dropdown-menu hidden absolute left-0 mt-0 w-56 bg-white border border-slate-100 shadow-xl rounded-xl p-2 z-[100]">
-            <a href="link-building.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">Link Building</a>
-             <a href="aeo-ai-search.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">AEO / AI Search</a>
-            <a href="digital-pr.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">Digital PR</a>
-            <a href="on-page-optimization.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">On-Page SEO</a>
-            <a href="about.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">About Dan</a>
+    <div class="hidden md:flex items-center gap-8 text-[11px] font-bold uppercase tracking-tight text-slate-600">
+        <a href="index.html" class="hover:text-[#14B8A6] transition-colors">Home</a>
+        <div class="relative group">
+            <button class="flex items-center gap-1 hover:text-[#14B8A6] transition-colors uppercase py-2">
+                Services
+            </button>
+            <div class="dropdown-menu hidden absolute left-0 mt-0 w-56 bg-white border border-slate-100 shadow-xl rounded-xl p-2 z-[100]">
+                <a href="link-building.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors font-bold">Link Building</a>
+                <a href="digital-pr.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">Digital PR</a>
+                <a href="on-page-optimization.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">On-Page SEO</a>
+                <a href="aeo.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">AEO / AI Search</a>
+                <a href="about.html" class="block px-4 py-3 hover:bg-slate-50 hover:text-[#14B8A6] rounded-lg transition-colors">About Dan</a>
+            </div>
         </div>
+
+        <a href="#contact" class="bg-slate-900 text-white px-6 py-3 rounded-full hover:bg-slate-800 transition">Consult Now</a>
     </div>
-    <a href="audit.html" class="hover:text-[#14B8A6] transition-colors">AI Search Audit</a>
-    <a href="https://wa.me/35056020088" class="bg-slate-900 text-white px-6 py-3 rounded-full hover:bg-slate-800 transition">Consult Now</a>
-</div>
 
     <button id="menu-btn" class="md:hidden text-slate-900 focus:outline-none">
         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+</nav>
+
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[200] flex flex-col items-center justify-center gap-8 text-center">
+    <button id="close-menu" class="absolute top-8 right-8 text-slate-900">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
     </button>
 
-    <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-[90] flex flex-col items-center justify-center gap-8 text-center">
-        <a href="index.html" class="text-2xl font-black uppercase tracking-tighter">Home</a>
-        <div class="h-px w-12 bg-slate-100"></div>
-         <a href="link-building.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">Link Building</a>
-     <a href="aeo-ai-search.html" class="text-lg font-bold uppercase tracking-widest text-[#14B8A6]">AEO / AI Search</a>
-        <a href="digital-pr.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">Digital PR</a>
-         <a href="on-page-optimization.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">On-Page SEO</a>
-       
-        <div class="h-px w-12 bg-slate-100"></div>
-        <a href="audit.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">AI Search Audit</a>
-        <a href="https://wa.me/35056020088" class="bg-[#14B8A6] text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs">WhatsApp Me</a>
-    </div>
-</nav>
+    <a href="index.html" class="text-2xl font-black uppercase tracking-tighter text-slate-900">Home</a>
+    <div class="h-px w-12 bg-slate-100"></div>
 
+    <a href="link-building.html" class="text-lg font-bold uppercase tracking-widest text-[#14B8A6]">Link Building</a>
+    <a href="digital-pr.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">Digital PR</a>
+    <a href="on-page-optimization.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">On-Page SEO</a>
+    <a href="aeo.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">AEO / AI Search</a>
+    <a href="about.html" class="text-lg font-bold uppercase tracking-widest text-slate-600">About Dan</a>
+
+    <div class="h-px w-12 bg-slate-100"></div>
+    <a href="#contact" class="text-lg font-bold uppercase tracking-widest text-slate-600">Work With Me</a>
+
+    <a href="https://wa.me/35056020088" class="bg-[#14B8A6] text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs mt-4">
+        WhatsApp Me
+    </a>
+</div>
+
+<!-- HERO -->
 <section class="max-w-6xl mx-auto px-8 pt-12 pb-6 md:py-24 grid md:grid-cols-2 gap-12 items-center">
     <div>
         <p class="text-[#14B8A6] font-bold uppercase tracking-[0.4em] text-[10px] mb-4">Authority Acquisition</p>
@@ -66,23 +94,25 @@
             Links from the sites <span class="text-[#14B8A6]">AI trusts</span> <br>in your niche.
         </h1>
         <p class="text-lg text-slate-500 leading-relaxed max-w-lg mb-10">
-            No link lists. No generic guest posts. No PBNs or Link Farms. I secure backlinks on the exact websites which AI models cite as the most relevant and authoritative sources for your industry — so that your brand earns authority where it matters most for both SEO and AI-driven discovery.
+            No link lists. No generic guest posts. No PBNs or link farms. I secure backlinks on the exact websites AI models cite as the most relevant and authoritative sources for your industry &mdash; so your brand earns authority where it matters most, for both SEO and AI-driven discovery.
         </p>
-        <a href="#contact" class="bg-slate-900 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-[10px]">Request Link Audit</a>
+        <a href="#contact" class="bg-slate-900 text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-[#14B8A6] transition">Request Link Audit</a>
     </div>
     <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-xl">
         <div class="w-10 h-10 border border-[#14B8A6] text-[#14B8A6] flex items-center justify-center text-[10px] font-bold mb-6">LB</div>
         <h3 class="text-2xl font-black text-slate-900 mb-4 uppercase">The Hawk Standard</h3>
         <ul class="space-y-4 text-slate-500 text-sm">
-            <li class="flex items-center gap-2"><span class="text-[#14B8A6]">✔</span> High Authority Placements on Websites Cited by AI Search</li>
-            <li class="flex items-center gap-2"><span class="text-[#14B8A6]">✔</span> Significant Monthly Organic Traffic on Sites with a Real Audience </li>
-            <li class="flex items-center gap-2"><span class="text-[#14B8A6]">✔</span> Verified Topical & Semantic Relevance to Your Niche</li>
+            <li class="flex items-center gap-2"><span class="text-[#14B8A6]">&#10004;</span> High-authority placements on websites cited by AI search</li>
+            <li class="flex items-center gap-2"><span class="text-[#14B8A6]">&#10004;</span> Significant monthly organic traffic on sites with a real audience</li>
+            <li class="flex items-center gap-2"><span class="text-[#14B8A6]">&#10004;</span> Verified topical &amp; semantic relevance to your niche</li>
         </ul>
     </div>
 </section>
-   <section id="usp-comparison" class="py-16 md:py-24 bg-white border-y border-slate-100">
+
+<!-- USP COMPARISON -->
+<section id="usp-comparison" class="py-16 md:py-24 bg-white border-y border-slate-100">
     <div class="max-w-6xl mx-auto px-6">
-        
+
         <div class="text-center mb-12 md:mb-20">
             <p class="text-[#14B8A6] font-bold uppercase tracking-[0.3em] text-[10px] mb-4">The AI-Authority Model</p>
             <h2 class="text-3xl md:text-6xl font-black text-slate-900 uppercase tracking-tighter leading-tight">
@@ -91,111 +121,69 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-px bg-slate-100 border border-slate-100 rounded-3xl overflow-hidden shadow-xl">
-            
+
             <div class="bg-slate-50 p-8 md:p-12">
                 <div class="flex items-center gap-3 mb-8">
-                    <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold text-xs">✕</div>
+                    <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold text-xs">&#10005;</div>
                     <h3 class="text-lg font-black uppercase tracking-tight text-slate-400">"Agency" Link Building</h3>
                 </div>
-                
+
                 <div class="space-y-10">
                     <div>
-                        <h4 class="font-bold text-slate-900 uppercase text-xs mb-2 tracking-widest">01. Risky Irrelevant Websites</h4>
-                        <p class="text-base text-slate-500">Relies on "link lists" of websites which sell links to anyone willing to pay. Often full of PBNs and link farms that add zero value to your brand entity or ranking.</p>
+                        <h4 class="font-bold text-slate-900 uppercase text-xs mb-2 tracking-widest">01. Risky, Irrelevant Websites</h4>
+                        <p class="text-base text-slate-500">Relies on "link lists" of websites that sell links to anyone willing to pay &mdash; often full of PBNs and link farms that add zero value to your brand entity or ranking.</p>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 uppercase text-xs mb-2 tracking-widest">02. Search engines devalue overpriced, bad links</h4>
-                        <p class="text-base text-slate-500">Vulnerable to Google SpamBrain and helpful content updates that devalue unnatural patterns and websites which are selling links. That means those links you are paying double price for are likely passing no ranking value!</p>
+                        <h4 class="font-bold text-slate-900 uppercase text-xs mb-2 tracking-widest">02. Search Engines Devalue Bad Links</h4>
+                        <p class="text-base text-slate-500">Vulnerable to Google's SpamBrain and helpful-content updates that devalue unnatural patterns and link-selling sites &mdash; so the links you paid a premium for often pass no ranking value at all.</p>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 uppercase text-xs mb-2 tracking-widest">03. Outsourced Content & Over Payment</h4>
-                        <p class="text-base text-slate-500">SEO agencies will often outsource their work to smaller link building agencies and content writers often doubling the price for low quality content and links.</p>
+                        <h4 class="font-bold text-slate-900 uppercase text-xs mb-2 tracking-widest">03. Outsourced Content &amp; Overpayment</h4>
+                        <p class="text-base text-slate-500">Agencies often outsource to smaller link-building shops and content writers, doubling the price for low-quality content and links.</p>
                     </div>
                     <div class="pt-4 border-t border-slate-200">
-                        <p class="text-xs font-black text-red-400 uppercase tracking-widest">Vanity metrics adding little to no SEO and AEO value</p>
-                        <p class="text-sm text-slate-400 italic mt-1">Modern search engines devalue irrelevant backlinks from link farms and AI models do not cite low-quality link environments.</p>
+                        <p class="text-xs font-black text-red-400 uppercase tracking-widest">Vanity metrics, little real SEO or AEO value</p>
+                        <p class="text-sm text-slate-400 italic mt-1">Modern search engines devalue irrelevant link-farm backlinks, and AI models do not cite low-quality link environments.</p>
                     </div>
                 </div>
             </div>
 
             <div class="bg-white p-8 md:p-12 relative border-t-4 md:border-t-0 md:border-l-4 border-[#14B8A6]">
                 <div class="flex items-center gap-3 mb-8">
-                    <div class="w-8 h-8 rounded-full bg-[#14B8A6] flex items-center justify-center text-white font-bold text-xs">✓</div>
-                    <h3 class="text-lg font-black uppercase tracking-tight text-slate-900">AI-Cited Rank Increasing Links</h3>
+                    <div class="w-8 h-8 rounded-full bg-[#14B8A6] flex items-center justify-center text-white font-bold text-xs">&#10003;</div>
+                    <h3 class="text-lg font-black uppercase tracking-tight text-slate-900">AI-Cited, Rank-Increasing Links</h3>
                 </div>
 
                 <div class="space-y-10">
                     <div>
                         <h4 class="font-bold text-slate-900 uppercase text-xs mb-2 tracking-widest text-[#14B8A6]">01. Identify Sites Cited by AI</h4>
-                        <p class="text-base text-slate-600 font-medium">I find the exact "Seed Sites" currently cited by AI models as the most relevant and authoritative sources in your industry.</p>
+                        <p class="text-base text-slate-600 font-medium">I find the exact "seed sites" currently cited by AI models as the most relevant and authoritative sources in your industry.</p>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 uppercase text-xs mb-2 tracking-widest text-[#14B8A6]">02. Secure Relevant Links with Content which Adds Value</h4>
-                        <p class="text-base text-slate-600 font-medium">I perform outreach to these trusted authorities and create all the content myself to ensure that it adds information and value and therefore passes real topical authority which boost your rankings.</p>
+                        <h4 class="font-bold text-slate-900 uppercase text-xs mb-2 tracking-widest text-[#14B8A6]">02. Earn Relevant Links with Real Content</h4>
+                        <p class="text-base text-slate-600 font-medium">I outreach to those trusted authorities and write all the content myself, so it adds genuine value and passes real topical authority that boosts your rankings.</p>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 uppercase text-xs mb-2 tracking-widest">03. Negoitate the Best Prices and cut out Middlemen</h4>
-                        <p class="text-base text-slate-500">I do not outsource work to anyone and focus on doing quality work with my over 17 years of experience for a select list of clients. I cut out the middlemen and get you the best prices. </p>
+                        <h4 class="font-bold text-slate-900 uppercase text-xs mb-2 tracking-widest">03. Negotiate the Best Prices, Cut Out Middlemen</h4>
+                        <p class="text-base text-slate-500">I don't outsource. You get quality work backed by 17+ years of experience, for a select list of clients, with the middlemen and their markups cut out.</p>
                     </div>
                     <div class="pt-4 border-t border-teal-50">
-                        <p class="text-xs font-black text-[#14B8A6] uppercase tracking-widest">Actual SEO Ranking and AI Recommendation Impact</p>
-                        <p class="text-sm text-slate-600 font-bold mt-1">Gain SEO rankings and increase your organic visibility and revenue while becoming a "recommended source" in AI answers.</p>
+                        <p class="text-xs font-black text-[#14B8A6] uppercase tracking-widest">Real SEO ranking and AI recommendation impact</p>
+                        <p class="text-sm text-slate-600 font-bold mt-1">Gain rankings and organic revenue while becoming a "recommended source" in AI answers.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="mt-8 text-center">
-            <a href="audit.html" class="inline-block w-full md:w-auto bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-[#14B8A6] transition shadow-lg">
+            <a href="#contact" class="inline-block w-full md:w-auto bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-[#14B8A6] transition shadow-lg">
                 Get Your AI Search Audit
             </a>
         </div>
     </div>
 </section>
-            <div class="lg:col-span-5 order-1 lg:order-2">
-                <p class="text-[#14B8A6] font-bold uppercase tracking-[0.3em] text-[10px] mb-6">The AI-Authority Model</p>
-                <h2 class="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter leading-[1.1] mb-8">
-                    Stop Buying Links. <br> <span class="text-[#14B8A6]">Start Earning Citations.</span>
-                </h2>
-                
-                <div class="space-y-8">
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0 w-10 h-10 bg-slate-900 text-[#14B8A6] rounded-xl flex items-center justify-center font-bold">01</div>
-                        <div>
-                            <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Identify Cited Sources</h4>
-                            <p class="text-sm text-slate-500 leading-relaxed">I use custom Python analysis to find the exact "Seed Sites" currently cited by AI models in your specific niche.</p>
-                        </div>
-                    </div>
 
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0 w-10 h-10 bg-slate-900 text-[#14B8A6] rounded-xl flex items-center justify-center font-bold">02</div>
-                        <div>
-                            <h4 class="font-bold text-slate-900 uppercase text-xs mb-1">Secure Premium Placements</h4>
-                            <p class="text-sm text-slate-500 leading-relaxed">Manual outreach to trusted authorities to negotiate relevant content marketing with backlinks that pass real value.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0 w-10 h-10 bg-[#14B8A6] text-white rounded-xl flex items-center justify-center font-bold">✓</div>
-                        <div>
-                            <h4 class="font-bold text-slate-900 uppercase text-xs mb-1 font-black">Improve AEO & SEO</h4>
-                            <p class="text-sm text-slate-600 font-medium leading-relaxed">Gain authority from the sites AI has already validated, maximizing both rankings and chatbot citations.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-10 pt-10 border-t border-slate-100">
-                    <p class="text-slate-400 text-[10px] uppercase tracking-widest font-bold mb-4 italic">Result: One Link. Two Wins.</p>
-                    <a href="audit.html" class="inline-block bg-slate-900 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-[#14B8A6] transition shadow-lg">
-                        Get Your AI Search Audit
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
+<!-- PROCESS -->
 <section class="py-12 md:py-24 bg-slate-50 border-y border-slate-100">
     <div class="max-w-6xl mx-auto px-8">
         <div class="mb-8 md:mb-16 text-center">
@@ -206,48 +194,67 @@
             <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
                 <span class="text-xs font-black text-[#14B8A6] uppercase tracking-widest">Phase 01</span>
                 <h4 class="text-lg font-black mt-4 mb-2 uppercase">Competitor Gap Analysis</h4>
-                <p class="text-slate-400 text-sm">I identify the best links your competitors have which pass value that you don't and I secure a better placement.</p>
+                <p class="text-slate-400 text-sm">I identify the best value-passing links your competitors have that you don't, and secure you a stronger placement.</p>
             </div>
             <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
                 <span class="text-xs font-black text-[#14B8A6] uppercase tracking-widest">Phase 02</span>
                 <h4 class="text-lg font-black mt-4 mb-2 uppercase">High-Authority Outreach</h4>
-                <p class="text-slate-400 text-sm">I secure manual placements on the most relevant news sites, blogs, and industry portals to your niche with verified traffic to build your brand entity.</p>
+                <p class="text-slate-400 text-sm">I secure manual placements on the most relevant news sites, blogs and industry portals in your niche &mdash; ones with verified traffic &mdash; to build your brand entity.</p>
             </div>
             <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
                 <span class="text-xs font-black text-[#14B8A6] uppercase tracking-widest">Phase 03</span>
                 <h4 class="text-lg font-black mt-4 mb-2 uppercase">Velocity Management</h4>
-                <p class="text-slate-400 text-sm">I build natural link growth patterns to ensure long-term safety and ranking and Knowledge Graph stability.</p>
+                <p class="text-slate-400 text-sm">I build natural link-growth patterns to protect long-term ranking safety and Knowledge Graph stability.</p>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="py-12 bg-white text-center">
+<!-- CONTACT -->
+<section id="contact" class="py-16 md:py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-8 text-center">
+        <p class="text-[#14B8A6] font-bold uppercase tracking-[0.4em] text-[10px] mb-4">Work With Me</p>
+        <h2 class="text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-6">Let&rsquo;s build real authority.</h2>
+        <p class="text-lg text-slate-500 leading-relaxed mb-10 max-w-xl mx-auto">
+            Tell me the niche you want to win and I&rsquo;ll show you where the authority actually sits. I take on a small number of clients at a time.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="mailto:dan@hawkmarketing.io" class="bg-slate-900 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-slate-800 transition">
+                Email Me
+            </a>
+            <a href="https://wa.me/35056020088" class="bg-[#14B8A6] text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:opacity-90 transition">
+                WhatsApp Me
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="py-12 bg-white text-center border-t border-slate-100">
     <p class="text-[10px] font-bold uppercase tracking-[0.5em] text-slate-400 mb-2">Hawk Marketing</p>
     <p class="text-[9px] font-medium uppercase tracking-widest text-slate-300 mb-6">Gibraltar Business Licence: BL257745</p>
-    
     <div class="flex justify-center gap-6 text-slate-400 font-bold uppercase text-[9px] tracking-widest">
         <a href="index.html" class="hover:text-[#14B8A6] transition-colors">Home</a>
+        <a href="about.html" class="hover:text-[#14B8A6] transition-colors">About</a>
+        <a href="#contact" class="hover:text-[#14B8A6] transition-colors">Contact</a>
         <a href="https://wa.me/35056020088" class="hover:text-[#14B8A6] transition-colors">WhatsApp</a>
     </div>
 </footer>
+
 <script>
     const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-menu');
     const mobileMenu = document.getElementById('mobile-menu');
-    const menuIcon = document.getElementById('menu-icon');
 
     menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        
-        // Toggle between Hamburger and X icon
-        if (mobileMenu.classList.contains('hidden')) {
-            menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-            document.body.style.overflow = 'auto'; // Re-enable scroll
-        } else {
-            menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
-            document.body.style.overflow = 'hidden'; // Disable scroll when menu open
-        }
+        mobileMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = 'auto';
     });
 </script>
+
 </body>
 </html>
